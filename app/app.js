@@ -21,7 +21,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use((req,res,next)=>{
-  req.locals.user=req.user || null;
+  res.locals.user= req.user || null;
   next();
 })
 mongoose.connect(keys.mongoURI, { useNewUrlParser: true } )
