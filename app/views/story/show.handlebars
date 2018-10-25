@@ -1,6 +1,10 @@
 <div class="row">
   <div class="col s12 m8">
-    <h3 class="welcome">{{story.title}}
+    {{#if user}}
+        <h3 class="welcome">{{story.title}}
+      {{else}}
+        <h3 >{{story.title}}
+    {{/if}}
       {{{editIcon story.user.id user.id story.id false}}}
     </h3>
     <div class="card story">
