@@ -1,0 +1,58 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+select{
+  display: block;
+}
+main {
+  flex: 1 0 auto;
+}
+
+.side-nav li a{
+  color: maroon;
+}
+.welcome{
+  margin-top: 100px;
+}
+
+.input-field>label{
+  position: relative;
+}
+[type="checkbox"]:not(:checked),[type="checkbox"]:checked{
+  position: relative;
+  opacity:1;
+  pointer-events: all;
+}
+
+.box-length{
+height:20rem;
+}
+
+nav ul a{
+  padding: 0px 9px;
+  border-right: 1px dashed darkgrey;
+}
+
+nav i{
+  height:0px;
+}
+
+.side-nav li{
+  margin-top:65px;
+  margin-block-end: 20px;
+}
+
+
+.brand-logo{
+text-align: left;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .brand-logo{
+    text-align: left;
+    }
+}
+
